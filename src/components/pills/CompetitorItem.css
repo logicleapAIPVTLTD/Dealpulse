@@ -1,0 +1,19 @@
+.competitor-item p {
+    margin: 0;
+    line-height: 1.4;
+}
+.competitor-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.competitor-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0.25rem 0 0.75rem 0;
+}
+.competitor-tag {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+}

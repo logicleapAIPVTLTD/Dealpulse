@@ -1,0 +1,17 @@
+.health-indicator {
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+}
+.health-indicator p {
+    margin: 0;
+    line-height: 1.4;
+}
+.health-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+.health-value {
+    font-size: 0.9rem;
+    font-weight: bold;
+}

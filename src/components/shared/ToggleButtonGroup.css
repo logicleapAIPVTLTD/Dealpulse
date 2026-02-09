@@ -1,0 +1,20 @@
+.toggle-group {
+    display: flex;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.toggle-btn {
+    background-color: #fff;
+    border: none;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    color: #333;
+    font-weight: 500;
+}
+.toggle-btn:not(:last-child) {
+    border-right: 1px solid #ced4da;
+}
+.toggle-btn.active {
+    background-color: #0052FF;
+    color: #fff;
+}

@@ -1,0 +1,70 @@
+.doc-list-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.doc-list-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.doc-icon {
+    color: #dc3545; /* PDF Red */
+}
+
+.doc-details p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.doc-name {
+    font-weight: 600;
+    color: #333;
+}
+
+.doc-meta {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.status-pill {
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+.doc-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-btn {
+    background: none;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.action-btn.view:hover {
+    background-color: #0052FF;
+    color: #fff;
+    border-color: #0052FF;
+}
+
+.action-btn.delete:hover {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+}

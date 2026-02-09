@@ -1,0 +1,27 @@
+.metric-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+.sentiment-bar {
+    width: 4px;
+    height: 36px; /* Adjust height as needed */
+    border-radius: 2px;
+    margin-top: 4px;
+}
+.metric-item-content p {
+    margin: 0;
+    line-height: 1.4;
+}
+.metric-item-label {
+    color: #555;
+}
+.metric-item-value {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333; /* Default color if no sentiment */
+}
+.metric-item-secondary {
+    font-size: 0.85rem;
+    color: #6c757d;
+}

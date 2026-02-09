@@ -1,0 +1,59 @@
+.alert-card {
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    border-left: 4px solid #dc3545; /* Red for deal alert */
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+}
+.alert-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+}
+.alert-tag {
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.alert-headline {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.expand-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.expand-btn svg {
+    transition: transform 0.2s ease;
+}
+.expand-btn svg.open {
+    transform: rotate(180deg);
+}
+.alert-body {
+    padding: 1rem 0;
+    color: #555;
+    line-height: 1.6;
+}
+.alert-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.alert-metadata {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+.relevance-tag {
+    background-color: #f0f2f5;
+    color: #555;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}

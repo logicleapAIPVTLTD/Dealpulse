@@ -1,0 +1,35 @@
+.pillar-summary-card {
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.pillar-summary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.pillar-summary-card h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.pillar-summary-card p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.summary-card-prompt {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

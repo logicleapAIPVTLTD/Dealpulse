@@ -1,0 +1,40 @@
+.file-uploader {
+    background-color: #F8F9FA;
+    border: 2px dashed #ced4da;
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.file-uploader:hover, .file-uploader.drag-active {
+    border-color: #0052FF;
+    background-color: #EBF4FF;
+}
+
+.uploader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6c757d;
+}
+
+.uploader-content svg {
+    margin-bottom: 1rem;
+    stroke: #0052FF;
+}
+
+.uploader-content p {
+    margin: 0;
+}
+
+.uploader-content strong {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.uploader-hint {
+    font-size: 0.9rem;
+}

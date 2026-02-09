@@ -1,0 +1,47 @@
+.predictive-card {
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.predictive-card p {
+    margin: 0;
+}
+.predictive-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+.predictive-icon {
+    font-size: 1.2rem;
+}
+.predictive-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.predictive-description {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+.predictive-confidence {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.timeframe-tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+}

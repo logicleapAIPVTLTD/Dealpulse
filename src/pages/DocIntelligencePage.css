@@ -1,0 +1,161 @@
+/* --- UPDATED TWO-COLUMN LAYOUT --- */
+.doc-intelligence-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Make right column wider */
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* --- MAIN INTERACTIVE CARD ON THE LEFT --- */
+.main-card {
+    background-color: #F8F9FA;
+    border: 2px dashed #ced4da;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    min-height: 400px; /* Adjusted height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-card.drag-active {
+    border-color: #0052FF;
+    background-color: #EBF4FF;
+}
+
+/* Uploader Content Styles */
+.uploader-content {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6c757d;
+}
+.uploader-content strong { color: #333; font-size: 1.1rem; }
+.uploader-hint { font-size: 0.9rem; }
+
+/* Selected File View Styles */
+.selected-file-view {
+    width: 100%;
+}
+.selected-file-view > p {
+    font-weight: 500;
+    color: #6c757d;
+}
+.file-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.file-icon { font-size: 2rem; }
+.file-text p { margin: 0; line-height: 1.4; }
+.file-name { font-weight: 600; color: #333; }
+.file-size { font-size: 0.9rem; color: #6c757d; }
+.submit-analysis-btn {
+    width: 100%; background-color: #28a745; color: #fff; border: none;
+    border-radius: 8px; padding: 0.8rem 1.5rem; font-size: 1rem;
+    font-weight: bold; cursor: pointer; transition: background-color 0.2s ease;
+}
+.submit-analysis-btn:hover { background-color: #218838; }
+.submit-analysis-btn:disabled { background-color: #6c757d; cursor: not-allowed; }
+
+/* Analysis Results Content Styles */
+.analysis-results-content {
+    width: 100%;
+    text-align: left;
+}
+.analysis-results-content h4 {
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+}
+.result-item.simple {
+    border-radius: 8px; padding: 0.75rem 1rem; margin-bottom: 0.75rem;
+}
+.result-item.simple.positive { background-color: #E6F4EA; }
+.result-item.simple.neutral { background-color: #EBF4FF; }
+.result-item.simple.warning { background-color: #FFFBE6; }
+.result-label { font-size: 0.8rem; font-weight: 500; color: #555; margin-bottom: 0.25rem; }
+.result-value { font-size: 1.2rem; font-weight: bold; color: #333; }
+.result-value.small { font-size: 0.9rem; font-weight: normal; }
+.download-report-btn {
+    width: 100%; background-color: #0052FF; color: #fff; border: none;
+    border-radius: 8px; padding: 0.8rem; font-size: 1rem;
+    font-weight: bold; cursor: pointer; margin-top: 1rem;
+}
+
+/* --- RIGHT COLUMN STYLES --- */
+.right-column {
+    align-self: stretch; /* Makes the column take full height */
+}
+.recent-docs-section {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: 100%; /* Makes the card take full height of the column */
+}
+.section-title {
+    font-size: 1.25rem; color: #333; margin: 0 0 1.5rem 0;
+    padding-bottom: 1rem; border-bottom: 1px solid #f0f2f5;
+}
+.doc-list {
+    display: flex; flex-direction: column; gap: 1rem;
+}
+
+.download-report-btn:hover {
+    background-color: #0041CC;
+}
+.main-card {
+    background-color: #F8F9FA;
+    border: 2px dashed #ced4da;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    min-height: 400px; /* Adjusted height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-card.drag-active {
+    border-color: #0052FF;
+    background-color: #EBF4FF;
+}
+
+/* NEW: Hover effect for the main-card when it contains uploader-content */
+.main-card:has(.uploader-content):hover {
+    border-color: #0052FF; /* Blue border on hover */
+    background-color: #EBF4FF; /* Light blue background on hover */
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+/* Uploader Content Styles */
+.uploader-content {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6c757d;
+}
+
+/* NEW: Optional - make text bolder/darker on hover */
+.main-card:has(.uploader-content):hover .uploader-content strong {
+    color: #001A52; /* Darker blue */
+}
+.main-card:has(.uploader-content):hover .uploader-content p {
+    color: #333; /* Darker text */
+}
+
+.uploader-content strong { color: #333; font-size: 1.1rem; }
+.uploader-hint { font-size: 0.9rem; }

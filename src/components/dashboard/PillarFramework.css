@@ -1,0 +1,32 @@
+/* ... (all your existing styles) ... */
+
+/* NEW STYLE for the summary card grid */
+.pillar-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2x2 grid */
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* NEW STYLE for the "Back" button */
+.back-to-pillars-btn {
+    background-color: #f0f2f5;
+    color: #555;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    padding: 0.4rem 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.back-to-pillars-btn:hover {
+    background-color: #e2e6ea;
+    border-color: #b1b9c1;
+}
+
+/* Make it a single column on smaller screens */
+@media (max-width: 768px) {
+    .pillar-summary-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,18 @@
+.metric-list-item {
+    margin-bottom: 1rem;
+}
+.metric-list-item:last-child {
+    margin-bottom: 0;
+}
+.metric-list-item p {
+    margin: 0;
+    line-height: 1.4;
+}
+.metric-list-label {
+    font-weight: 600;
+    color: #333;
+}
+.metric-list-value {
+    font-size: 0.9rem;
+    color: #555;
+}

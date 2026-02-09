@@ -1,0 +1,49 @@
+.stream-page-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.stream-left-column, .stream-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.stream-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stream-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #0052FF;
+}
+.stream-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/* A small tweak to the reused AlertCard for this page */
+.stream-list .alert-card {
+    border-left-color: #ced4da; /* Neutral border instead of red */
+    margin-top: 0;
+}
+
+/* ADD THESE STYLES TO THE BOTTOM of StreamPage.css */
+
+.predictive-insights-section {
+    margin-top: 1.5rem;
+}
+
+.section-title {
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.predictive-insights-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

@@ -1,0 +1,20 @@
+.status-banner {
+    background-color: #EBF4FF;
+    color: #0052FF;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 0.9rem;
+}
+.statuses {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.status-item span {
+    color: #555;
+    font-weight: 500;
+}

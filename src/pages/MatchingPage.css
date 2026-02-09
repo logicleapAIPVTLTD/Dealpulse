@@ -1,0 +1,201 @@
+.matching-page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.filter-card {
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.filter-row {
+    display: grid;
+    gap: 1.25rem; 
+    margin-bottom: 1.25rem; 
+}
+
+/* Main row is now three-columns */
+.filter-row.three-columns {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Advanced rows are four-columns */
+.filter-row.four-columns {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
+    font-size: 0.75rem; 
+    font-weight: 600; 
+    color: #6c757d;
+    margin-bottom: 0.35rem; 
+    text-transform: uppercase; 
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 0.9rem;
+    box-sizing: border-box; 
+    font-family: inherit; 
+}
+
+/* Autocomplete wrapper */
+.autocomplete-wrapper {
+    position: relative;
+}
+
+/* Suggestions dropdown list */
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0.5rem 0;
+    margin-top: 0.25rem;
+    z-index: 100;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f2f5;
+}
+
+/* Wrapper for the toggle button */
+.toggle-filter-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.25rem;
+    border-top: 1px solid #f0f2f5; /* Add a separator line */
+    padding-top: 1.25rem;
+}
+
+/* Style for the toggle button */
+.toggle-filters-btn {
+    background: none;
+    border: none;
+    color: #0052FF;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.toggle-filters-btn:hover {
+    background-color: #f0f2f5;
+}
+
+.find-matches-btn {
+    width: 100%;
+    background-color: #13B176;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem; 
+}
+
+.find-matches-btn:hover {
+    background-color: #006C7A;
+}
+
+.results-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Fullscreen dark transparent overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* VERY IMPORTANT */
+}
+
+/* The modal box */
+.modal-content {
+    background: #fff;
+    width: 650px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    animation: fadeIn 0.2s ease-in-out;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Modal header */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Close button */
+.modal-close-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Smooth fade animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.95);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+/* Scroll styling */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 20px;
+}

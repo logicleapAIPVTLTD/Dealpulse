@@ -1,0 +1,22 @@
+.pillar-framework-container {
+    margin-top: 2rem;
+}
+.pillar-content-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+}
+.pillar-column h4 {
+    margin: 0 0 1.5rem 0;
+    font-weight: 600;
+    color: #333;
+}
+.metrics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

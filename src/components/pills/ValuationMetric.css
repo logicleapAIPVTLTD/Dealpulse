@@ -1,0 +1,36 @@
+.valuation-metric {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+/* Reusing the sentiment-bar style from MetricItem.css */
+.valuation-metric .sentiment-bar {
+    width: 4px;
+    height: 50px; /* Adjust height for this component */
+    border-radius: 2px;
+    margin-top: 4px;
+}
+.valuation-content p {
+    margin: 0;
+    line-height: 1.4;
+}
+.valuation-label {
+    font-weight: bold;
+    color: #333;
+}
+.valuation-value {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #dc3545; /* Example color */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.valuation-value .value-icon {
+    font-size: 0.8rem;
+    color: #0052FF;
+}
+.valuation-comparison {
+    font-size: 0.85rem;
+    color: #6c757d;
+}

@@ -1,0 +1,34 @@
+.company-card {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.company-card p {
+    margin: 0;
+}
+.company-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.rating-tag {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    display: inline-block; /* To allow margin */
+}
+.company-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+.company-metric {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+    white-space: nowrap; /* Prevents wrapping */
+}

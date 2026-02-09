@@ -1,0 +1,19 @@
+.pill-filter {
+    display: flex;
+    gap: 0.5rem;
+}
+.pill-btn {
+    background-color: #f0f2f5;
+    color: #555;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    padding: 0.4rem 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.pill-btn.active {
+    background-color: #0052FF;
+    color: #fff;
+    border-color: #0052FF;
+}

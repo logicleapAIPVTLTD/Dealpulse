@@ -1,0 +1,39 @@
+.status-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.status-indicator-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.status-indicator-item p {
+    margin: 0;
+}
+.status-label {
+    font-weight: 500;
+}
+.status-details {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.status-line {
+    height: 4px;
+    width: 100px;
+    background-color: #0052FF;
+    border-radius: 2px;
+}
+.status-pill {
+    background-color: #E6F4EA;
+    color: #28a745;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+.status-metric {
+    font-weight: bold;
+    font-size: 1rem;
+}

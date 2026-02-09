@@ -1,0 +1,23 @@
+.buyer-card {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 1rem;
+    height: 100%;
+}
+.buyer-card p {
+    margin: 0;
+}
+.buyer-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.buyer-primary {
+    font-weight: 500;
+    color: #0052FF;
+    margin-bottom: 0.25rem;
+}
+.buyer-secondary {
+    font-size: 0.9rem;
+    color: #6c757d;
+}

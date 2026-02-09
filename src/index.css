@@ -1,0 +1,32 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  background-color: #F0F2F5;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+}
+
+/* New container to hold AppBar and main content */
+.main-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.content-container {
+    padding: 1.5rem;
+}

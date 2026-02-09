@@ -1,0 +1,21 @@
+.condition-indicator {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+.condition-bar {
+    width: 4px;
+    height: 40px;
+    border-radius: 2px;
+}
+.condition-content p {
+    margin: 0;
+    line-height: 1.4;
+}
+.condition-label {
+    font-weight: 600;
+}
+.condition-value {
+    font-size: 0.9rem;
+    font-weight: 500;
+}

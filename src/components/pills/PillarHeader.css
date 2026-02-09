@@ -1,0 +1,49 @@
+.pillar-header {
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pillar-header-content h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.2rem;
+}
+.pillar-header-content p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+.pillar-header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.pillar-chip {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.status-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #28a745;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.pillar-chip.outline {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: #fff;
+}
+
+/* ADD THIS TO THE BOTTOM of PillarHeader.css */
+.pillar-chip.solid {
+    background-color: #fff;
+    color: #0052FF;
+}

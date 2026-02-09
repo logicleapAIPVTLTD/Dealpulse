@@ -1,0 +1,85 @@
+.match-card {
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    transition: box-shadow 0.2s ease;
+}
+
+.match-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.match-info {
+    width: 100%;
+}
+
+.match-card p, .match-card h3, .match-card h4 {
+    margin: 0;
+}
+
+.match-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.match-header h3 {
+    font-size: 1.25rem;
+}
+
+.match-description {
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+/* Simplified details list */
+.match-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem; /* Space between details and button */
+}
+
+.match-detail-item {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #555;
+}
+
+/* --- THIS IS THE CHANGE --- */
+/* Updated styles for a single button, aligned right */
+.match-actions {
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align button to the right */
+    gap: 1rem;
+}
+
+.match-actions button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 200px; /* Give the button a consistent width */
+}
+
+/* Style for the new single "View Results" button */
+.view-results-btn {
+    background-color: #13B176;
+    color: #fff;
+    border: none;
+}
+
+.view-results-btn:hover {
+    background-color: #006C7A;
+}
+
+/* All styles for status-tag, strategic-fit, view-profile-btn, 
+   request-intro-btn, and match-score-container have been removed. */
