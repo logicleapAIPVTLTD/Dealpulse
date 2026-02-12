@@ -56,7 +56,7 @@ exports.uploadAndSummarizePDF = async (req, res) => {
     console.log("PDF Path:", pdfPath);
 
     // Use 'py' command for Windows
-    const pythonProcess = spawn("py", [scriptPath, pdfPath]);
+    const pythonProcess = spawn("python3", [scriptPath, pdfPath]);
 
     let pythonOutput = "";
     let pythonError = "";
@@ -128,7 +128,7 @@ exports.generatePDFReport = async (req, res) => {
 
     console.log("Spawning PDF generator:", scriptPath);
     // Use 'py' command for Windows
-    const pythonProcess = spawn("py", [scriptPath, outputPath]);
+    const pythonProcess = spawn("python3", [scriptPath, outputPath]);
 
     let scriptOutput = "";
     let scriptError = "";

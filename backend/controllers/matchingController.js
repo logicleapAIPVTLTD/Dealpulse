@@ -473,7 +473,7 @@ exports.getMatchedCompanies = async (req, res) => {
     console.log('Executing Python with args:', scriptArgs);
 
     // Use 'py' for Windows and pass environment variables
-    const pythonProcess = spawn('py', scriptArgs, {
+    const pythonProcess = spawn('python3', scriptArgs, {
       env: {
         ...process.env, 
         MONGO_URI: process.env.MONGO_URI,
