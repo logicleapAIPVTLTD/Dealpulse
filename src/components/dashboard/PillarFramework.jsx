@@ -20,7 +20,7 @@ import './PillarFramework.css';
 import '../pills/PillarFramework.css';
 
 // --- CONSTANTS ---
-const API_BASE_URL = 'http://localhost:3000/api/marketIntelligence';
+const API_BASE_URL = 'https://api-dealpulse.logicleap.in/api/marketIntelligence';
 const PILLAR_ENDPOINTS = { p1: '/latestMacro', p2: '/latestSector', p3: '/company', p4: '/deals' };
 
 const summaryCardData = [

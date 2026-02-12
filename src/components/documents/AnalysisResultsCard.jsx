@@ -13,7 +13,7 @@ export default function AnalysisResultsCard({ results }) {
         setIsDownloading(true);
         try {
             // Call the backend endpoint to generate and send the PDF
-            const response = await fetch('http://localhost:3000/api/generate-report', {
+            const response = await fetch('https://api-dealpulse.logicleap.in/api/generate-report', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

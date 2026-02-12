@@ -57,7 +57,7 @@ export default function HomePage() {
   useEffect(() => {
     const fetchSectors = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/marketIntelligence/latestSector');
+        const response = await fetch('https://api-dealpulse.logicleap.in/api/marketIntelligence/latestSector');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

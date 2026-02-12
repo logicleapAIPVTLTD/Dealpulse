@@ -71,7 +71,7 @@ export default function DocIntelligencePage() {
         formData.append('pdf', selectedFile);
 
         try {
-            const response = await fetch('http://localhost:3000/api/upload', {
+            const response = await fetch('https://api-dealpulse.logicleap.in/api/upload', {
                 method: 'POST',
                 body: formData,
             });

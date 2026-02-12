@@ -42,7 +42,7 @@
 //     useEffect(() => {
 //         const fetchCompanies = async () => {
 //             try {
-//                 const response = await fetch('http://localhost:3000/api/marketIntelligence/company');
+//                 const response = await fetch('https://api-dealpulse.logicleap.in/api/marketIntelligence/company');
 //                 const data = await response.json();
 //                 if (data && data.companies) {
 //                     setAllCompanies(data.companies);
@@ -82,7 +82,7 @@
 //         console.log("Finding matches with filters:", allFilters);
 
 //         try {
-//             const response = await fetch('http://localhost:3000/api/matching/match', {
+//             const response = await fetch('https://api-dealpulse.logicleap.in/api/matching/match', {
 //                 method: 'POST',
 //                 headers: {
 //                     'Content-Type': 'application/json',
@@ -416,7 +416,7 @@
 //     useEffect(() => {
 //         const fetchCompanies = async () => {
 //             try {
-//                 const response = await fetch('http://localhost:3000/api/marketIntelligence/company');
+//                 const response = await fetch('https://api-dealpulse.logicleap.in/api/marketIntelligence/company');
 //                 const data = await response.json();
 //                 if (data && data.companies) {
 //                     setAllCompanies(data.companies);
@@ -456,11 +456,11 @@
 //         console.log("Finding matches with filters:", allFilters);
 
 //         // 3. Determine which API endpoint to use based on industry
-//         let apiEndpoint = 'http://localhost:3000/api/matching/match';
+//         let apiEndpoint = 'https://api-dealpulse.logicleap.in/api/matching/match';
         
 //         // Check if industry is Financial
 //         if (industry && industry.toLowerCase() === 'financial') {
-//             apiEndpoint = 'http://localhost:3000/api/matching/financeMatch';
+//             apiEndpoint = 'https://api-dealpulse.logicleap.in/api/matching/financeMatch';
 //         }
 
 //         try {
@@ -923,7 +923,7 @@
 //     useEffect(() => {
 //         const fetchCompanies = async () => {
 //             try {
-//                 const response = await fetch('http://localhost:3000/api/marketIntelligence/company');
+//                 const response = await fetch('https://api-dealpulse.logicleap.in/api/marketIntelligence/company');
 //                 const data = await response.json();
 //                 if (data && data.companies) {
 //                     setAllCompanies(data.companies);
@@ -943,12 +943,12 @@
 //         setMatchData([]); 
 
 //         // Determine which API endpoint to use based on industry
-//         let apiEndpoint = 'http://localhost:3000/api/matching/match';
+//         let apiEndpoint = 'https://api-dealpulse.logicleap.in/api/matching/match';
 //         let requestBody = {};
         
 //         // Check if industry is Financial
 //         if (industry && industry.toLowerCase() === 'financial') {
-//             apiEndpoint = 'http://localhost:3000/api/matching/financeMatch';
+//             apiEndpoint = 'https://api-dealpulse.logicleap.in/api/matching/financeMatch';
             
 //             // For finance API - send filters matching the backend controller
 //             requestBody = { 
@@ -1449,7 +1449,7 @@
 //     useEffect(() => {
 //         const fetchCompanies = async () => {
 //             try {
-//                 const response = await fetch('http://localhost:3000/api/marketIntelligence/company');
+//                 const response = await fetch('https://api-dealpulse.logicleap.in/api/marketIntelligence/company');
 //                 const data = await response.json();
 //                 if (data && data.companies) {
 //                     setAllCompanies(data.companies);
@@ -1469,12 +1469,12 @@
 //         setMatchData([]); 
 
 //         // Determine which API endpoint to use based on industry
-//         let apiEndpoint = 'http://localhost:3000/api/matching/match';
+//         let apiEndpoint = 'https://api-dealpulse.logicleap.in/api/matching/match';
 //         let requestBody = {};
         
 //         // Check if industry is Financial
 //         if (industry && industry.toLowerCase() === 'financial') {
-//             apiEndpoint = 'http://localhost:3000/api/match/financeMatch';
+//             apiEndpoint = 'https://api-dealpulse.logicleap.in/api/match/financeMatch';
             
 //             // For finance API - send filters matching the backend controller
 //             requestBody = { 
@@ -1987,7 +1987,7 @@ export default function MatchingPage() {
     useEffect(() => {
         const fetchCompanies = async () => {
             try {
-                const response = await fetch('http://localhost:3000/api/marketIntelligence/company');
+                const response = await fetch('https://api-dealpulse.logicleap.in/api/marketIntelligence/company');
                 const data = await response.json();
                 if (data && data.companies) {
                     setAllCompanies(data.companies);
@@ -2007,14 +2007,14 @@ export default function MatchingPage() {
         setMatchData([]); 
 
         // Determine which API endpoint to use based on industry
-        let apiEndpoint = 'http://localhost:3000/api/matching/match';
+        let apiEndpoint = 'https://api-dealpulse.logicleap.in/api/matching/match';
         let requestBody = {};
         
         // Check if industry is Financial
         if (industry && industry.toLowerCase() === 'financial') {
             // Try different possible endpoint names for finance matching
             // Change this to match your actual backend route
-            apiEndpoint = 'http://localhost:3000/api/match/financeMatch'; 
+            apiEndpoint = 'https://api-dealpulse.logicleap.in/api/match/financeMatch'; 
             
             
             // For finance API - send filters matching the backend controller
